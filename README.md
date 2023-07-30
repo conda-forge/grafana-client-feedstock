@@ -1,11 +1,11 @@
-About grafana-client
-====================
+About grafana-client-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grafana-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/panodata/grafana-client
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/grafana-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: A client library for accessing the Grafana HTTP API, written in Python
 
