@@ -1,5 +1,5 @@
 {% set name = "grafana-client" %}
-{% set version = "3.6.0" %}
+{% set version = "3.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grafana-client-{{ version }}.tar.gz
-  sha256: 3de4a11d9d893b511f4d6d2efd9b92de1350c7f59486d7a48e8a68615d206bcd
+  sha256: e7da519c1c30f369018c0928df490ef20db9c253e2c4e79f2bff459437310995
 
 build:
   noarch: python
