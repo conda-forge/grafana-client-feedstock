@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@marie59](https://github.com/marie59/)
+* [@rxm7706](https://github.com/rxm7706/)
 
