@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
-    - setuptools-scm <8
-    - pip
+    - python >=3.8
+    - pip >=20.0
+    - setuptools >=40.0
+    - setuptools-scm >=4.0,<8
   run:
-    - python >=3.6
+    - python >=3.8
     - requests >=2.23.0,<3
-    - dataclasses
-    - importlib-metadata
+    - verlib2 ==0.1.0
 
 test:
   imports:
