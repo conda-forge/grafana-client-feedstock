@@ -23,7 +23,9 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - requests >=2.23.0,<3
+    - niquests >=3.4.0,<4
+# niquests requires urllib3.future >=2.8.902,<3 urllib3-future <3,>=2.8.902 jh2 >=5.0.3,<6.0.0
+    #- requests >=2.23.0,<3
     - verlib2 ==0.2.0
 
 test:
