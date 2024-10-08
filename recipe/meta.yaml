@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/grafana_client-{{ version }}.tar.gz
   sha256: cf92886236bc85f28deb5e969692b4fa187fc36caf2ecdf524e6acf2f44e1c3c
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -24,8 +24,6 @@ requirements:
   run:
     - python >=3.8
     - niquests >=3.4.0,<4
-# niquests requires urllib3.future >=2.8.902,<3 urllib3-future <3,>=2.8.902 jh2 >=5.0.3,<6.0.0
-    #- requests >=2.23.0,<3
     - verlib2 ==0.2.0
 
 test:
