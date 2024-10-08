@@ -1,17 +1,17 @@
 {% set name = "grafana-client" %}
-{% set version = "3.11.2" %}
+{% set version = "4.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/grafana-client-{{ version }}.tar.gz
-  sha256: a0079f2b82260f05798233d0993d2d567a435f57fa4202043089279a8a7bbd2d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/grafana_client-{{ version }}.tar.gz
+  sha256: cf92886236bc85f28deb5e969692b4fa187fc36caf2ecdf524e6acf2f44e1c3c
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - requests >=2.23.0,<3
+    - niquests >=3.4.0,<4
     - verlib2 ==0.2.0
 
 test:
